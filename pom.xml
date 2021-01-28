@@ -15,6 +15,7 @@
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>11</java.version>
+        <swagger.version>2.10.5</swagger.version>
     </properties>
     <dependencies>
         <dependency>
@@ -46,6 +47,31 @@
             <groupId>org.springframework.hateoas</groupId>
             <artifactId>spring-hateoas</artifactId>
             <version>1.2.3</version>
+        </dependency>
+
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.fasterxml.jackson.dataformat</groupId>-->
+<!--            <artifactId>jackson-dataformat-xml</artifactId>-->
+<!--            <version>2.11.4</version>-->
+<!--        </dependency>-->
+
+        <!-- swagger for api documentation and rest client generation -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+        <!-- swagger-ui for api documentation web ui -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-data-rest</artifactId>
+            <version>${swagger.version}</version>
         </dependency>
 
         <dependency>
